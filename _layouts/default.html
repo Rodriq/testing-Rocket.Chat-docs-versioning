@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ page.title}}</title>
+	<link rel="stylesheet" href="../assets/css/styles.css">
+	{% feed_meta %}
+    {% seo %}
+</head>
+<body>
+	<!-- {% include style.css %} -->
+	<div class="header">
+	{% include navigation.html %}
+	</div>
+	<div class="body">
+		
+		<div class="words">
+			{{ content }}
+		</div>
+		<div class="aside">
+			{% include api-section.html %}
+		</div>
+	</div>
+	<div class="footer">
+		<!-- {% include foot.html %} -->
+	</div>
+</body>
+</html>

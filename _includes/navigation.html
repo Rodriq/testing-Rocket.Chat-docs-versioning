@@ -1,0 +1,24 @@
+<!-- <nav>
+	<a href="/" {% if page.url == "/" %} style = "color: tan;" {% endif %}>
+		Home
+	</a>
+	<a href="/about.html" {% if page.url == "/about.html" %} style = "color: red;" {% endif %}>About</a>
+</nav> -->
+
+<!-- <nav>
+	{% for item in site.data.navigation %}
+	<a href="{{ item.link }}" {% if page.url == item.link %} style="color: tan"; {% endif %}>
+		{{ item.name}}
+	</a>
+	{% endfor %}
+</nav> -->
+<p>
+	<img class="logo-position" src="../assets/images/mac-bride-logo.png" alt="my logo">
+</p>
+<nav>
+	{% for item in site.data.navigation %}
+	<a href="{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}>
+		{{ item.name}}
+	</a>
+	{% endfor %}
+</nav>
