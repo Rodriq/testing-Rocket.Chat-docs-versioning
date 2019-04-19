@@ -6,21 +6,8 @@
 	<link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-	<!-- {% include style.css %} -->
-	<div class="header">
 	{% include navigation.html %}
-	</div>
-	<div class="body">
-		
-		<div class="words">
-			{{ content }}
-		</div>
-		<div class="aside">
-			{% include api-section.html %}
-		</div>
-	</div>
-	<div class="footer">
-		<!-- {% include foot.html %} -->
-	</div>
+	<!-- {% include style.css %} -->
+	{{ content }}
 </body>
 </html>

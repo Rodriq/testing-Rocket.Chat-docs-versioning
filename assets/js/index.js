@@ -17,7 +17,7 @@ function sendRequest() {
 	// 	responsePosition.innerHTML = Http.responseText;
 	// }
 	 // console.log(JSON.stringify(myAns)));
-	fetch("https://open.rocket.chat/api/v1/info").then(res =>
+	fetch(url).then(res =>
 	 res.json()
 	 ).then(myAns => {
 	 	responsePosition.innerHTML = JSON.stringify(myAns, undefined, 3)

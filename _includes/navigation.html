@@ -12,9 +12,6 @@
 	</a>
 	{% endfor %}
 </nav> -->
-<p>
-	<img class="logo-position" src="../assets/images/mac-bride-logo.png" alt="my logo">
-</p>
 <nav>
 	{% for item in site.data.navigation %}
 	<a href="{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}>
